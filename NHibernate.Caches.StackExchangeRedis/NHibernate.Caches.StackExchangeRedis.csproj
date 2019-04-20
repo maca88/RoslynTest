@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <!-- By removing StackExchange.Redis or NHibernate.Caches.Common reference FindReferencesAsync starts working as expected -->
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.0.495" />
+    <PackageReference Include="NHibernate" Version="5.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NHibernate.Caches.Common\NHibernate.Caches.Common.csproj" />
+  </ItemGroup>
+</Project>
